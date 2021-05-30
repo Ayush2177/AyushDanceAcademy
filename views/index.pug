@@ -1,0 +1,66 @@
+doctype html
+html
+  head
+    style
+    include ../static/style.css
+  body
+    nav#navbar 
+        ul 
+            div#logo
+                img(src="/static/img/logo.png")
+                | MDA
+            li #[a(href='/') Home ]
+            li #[a(href='/') About Us ]
+            li #[a(href='/') Contact ]
+            li #[a(href='/') Services]
+            li #[a(href='/') Class Info.]
+                
+
+    section#introsection 
+            div WELCOME TO AYUSH ACADEMY 
+            div.small Eat-Sleep-Dance-Repeat 
+
+    section#missionsection 
+        h2 Our Misssion
+
+        div.card 
+            h3 Expert Teaching
+             div.card-box
+                div.card-img
+                    img(src="/static/img/3.png")
+                div.card-content
+                    p This is the best Dance Academy of the Universe.
+        div.card 
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.png")
+                div.card-content
+                    p This is the best Dance Academy of the Universe.
+
+        div.card 
+            h3 Dance the way you like
+             div.card-box
+                div.card-img
+                    img(src="/static/img/2.png")
+                div.card-content
+                    p This is the best Dance Academy of the Universe.
+           
+           
+
+    section#sponsorssection 
+        h2 Our Sponsors
+        div#sponsors
+        img(src="/static/img/apple.png",alt='Sponsors Images',class='spimages')
+        img(src="/static/img/hp.png",alt='Sponsors Images',class='spimages')
+        img(src="/static/img/microsoft.png",alt='Sponsors Images',class='spimages')
+        img(src="/static/img/skype.png",alt='Sponsors Images',class='spimages')
+
+
+
+
+    footer#footer 
+        | Copyright@2021 AyushDanceAcademy
+  
+    script
+      include ../static/index.js
